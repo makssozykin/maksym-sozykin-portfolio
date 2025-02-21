@@ -1,0 +1,15 @@
+.footer {
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.696);
+  border: 1px solid black;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 15px 20px;
+}

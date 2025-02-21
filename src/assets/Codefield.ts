@@ -47,7 +47,7 @@ export const Codefield = (): void => {
     Vercel.src = 'src/images/lang/Vercel.png';
 
     const codeArr: HTMLImageElement[] = [HTML, CSS, JS, React, Redux, TS, Nodejs, Vite, Vercel];
-    console.log(codeArr);
+
     const iconData: Data[] = []; // Масив для зберігання даних про кожну іконку
 
     const initializeIcons = (): void => {
