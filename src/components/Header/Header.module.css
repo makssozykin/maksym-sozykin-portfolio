@@ -1,11 +1,15 @@
 .header {
+  position: absolute;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 100%;
-  padding: 20px 15px;
-  background-color: rgba(128, 128, 128, 0.696);
-  border: 1px solid black;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100px;
+  min-height: 100%;
+  padding: 0 1rem;
+  background-color: #c6e6f5;
+  outline: 1px solid red;
 }

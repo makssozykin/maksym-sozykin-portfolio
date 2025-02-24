@@ -1,8 +1,9 @@
 import { Hero } from "../../components/Hero/Hero";
+import css from './Home.module.css';
 
 const Home = () => {
     return (
-        <main>
+        <main className={css.main}>
             <Hero />
         </main>
     )
