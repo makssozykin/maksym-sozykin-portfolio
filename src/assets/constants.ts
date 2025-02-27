@@ -6,6 +6,14 @@ interface Constants {
     STAR_SPEED: number;
 }
 
+
+
+interface Links {
+    href: string;
+    src: string;
+    alt: string;
+}
+
 export const refs: Constants = {
     COLOR_SPACE: "white",
     COLOR_STARS: "black",
@@ -51,5 +59,35 @@ const Vercel = new Image();
 Vercel.src = 'src/images/lang/Vercel.png';
 Vercel.alt = "Vercel"
 
+
 export const stack: HTMLImageElement[] = [HTML, CSS, JS, React, Redux, TS, Nodejs, Vite, Vercel];
+
+
+export const myContacts: Links[] = [
+    {
+        href: "tel:+380934608452",
+        src: "src/images/icons/icon-call.png",
+        alt: "phone"
+    },
+    {
+        href: "mailto:maksym.sozykin@gmail.com",
+        src: "src/images/icons/icon-email.png",
+        alt: "email"
+    },
+    {
+        href: "https://t.me/mskrid",
+        src: "src/images/icons/icon-telegram.png",
+        alt: "telegram"
+    },
+    {
+        href: "https://www.linkedin.com/in/maksymsozykin/",
+        src: "src/images/icons/icon-linkedin.png",
+        alt: "linkedin"
+    },
+    {
+        href: "https://github.com/makssozykin",
+        src: "src/images/icons/icon-github.png",
+        alt: "github"
+    },
+]
 

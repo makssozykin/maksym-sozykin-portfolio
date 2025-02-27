@@ -18,6 +18,7 @@ export const Codefield = (): void => {
     }
     canvas.height = window.innerHeight;
     canvas.width = window.innerWidth;
+    canvas.style.webkitFilter = "blur(3px)";
 
     const HTML = new Image();
     HTML.src = 'src/images/lang/HTML5.png';
@@ -54,7 +55,7 @@ export const Codefield = (): void => {
         for (let i = 0; i < 100; i++) {
             const icon = codeArr[Math.floor(Math.random() * codeArr.length)];
             const codeSpeed: number = 0.05 * canvas.width;
-            const size = randomSize() * 30 + 30;
+            const size = randomSize() * 30 + 10;
             const xv: number = codeSpeed * randomSize() * Math.random();
             const yv: number = Math.sqrt(Math.pow(codeSpeed, 2) - Math.pow(xv, 2)) * randomSize();
             const speedMult = Math.random() / size;

@@ -1,6 +1,7 @@
 import { useToggleBtn } from '../../hooks/useToggleBtn';
 import { stack } from '../../assets/constants';
 import css from './Hero.module.css';
+import { Contacts } from '../Contacts/Contacts';
 export const Hero: React.FC = () => {
     const { handleShowCont, showContacts, handleHideCont, handleShowStack, showStack, handleHideStack } = useToggleBtn();
     return (
@@ -11,9 +12,7 @@ export const Hero: React.FC = () => {
                 <button type="button" onClick={!showStack ? handleShowStack : handleHideStack}>My Stack</button>
             </div>
             {showContacts && <div className={css.contacts}>
-                <a href="mailto:maksym.sozykin@gmail.com">Email</a>
-                <a href="https://www.linkedin.com/in/maksym-sozykin/">LinkedIn</a>
-                <a href="https://github.com/MaksymSozykin">GitHub</a>
+                <Contacts />
             </div>}
             {showStack && <div className={css.stack}>
                 <ul>

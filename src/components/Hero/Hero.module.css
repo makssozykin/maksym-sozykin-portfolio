@@ -38,8 +38,14 @@
 }
 
 .contacts {
-  width: 100px;
-  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  outline: 1px solid red;
+}
+
+.stack {
   display: flex;
   flex-direction: column;
   justify-content: center;

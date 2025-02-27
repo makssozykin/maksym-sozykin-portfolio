@@ -31,7 +31,7 @@ export const Navigation = () => {
                         </NavLink>
                     </li>
                     <li className={css.navItem}>
-                        <button type="button" className={css['assistantBtn buildLinkClass']}>
+                        <button type="button" className={css.assistantBtn}>
                             <FcAssistant />
                         </button>
                     </li>
