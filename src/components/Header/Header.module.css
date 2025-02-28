@@ -2,14 +2,14 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   z-index: 1000;
   top: 0;
   left: 0;
   width: 100px;
   min-height: 100%;
-  padding: 0 1rem;
+  padding: 1rem;
   background-color: #c6e6f5;
   outline: 1px solid red;
 }

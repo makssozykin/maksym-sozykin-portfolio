@@ -1,21 +1,25 @@
+import { useToggleBtn } from "../../hooks/useToggleBtn";
 import { myContacts } from "../../assets/constants";
+import { Contact } from '../Contact/Contact';
+import css from './Contacts.module.css'
+import { Button } from "../Button/Button";
+
 
 export const Contacts: React.FC = () => {
+    const { handleShowCont, showContacts, handleHideCont } = useToggleBtn();
+
     return (
-        <div>
-            <ul>
+        <div className={css['contacts-cont']}>
+            <Button isOpen={showContacts} onClick={!showContacts ? handleShowCont : handleHideCont}>Contacts</Button>
+            {showContacts && <ul className={css['contacts-list']}>
                 {
-                    myContacts.map((item, index) => {
+                    myContacts.map(({ href, src, alt }) => {
                         return (
-                            <li key={index}>
-                                <a href={item.href}>
-                                    <img src={item.src} alt={item.alt} width={48} height={48} />
-                                </a>
-                            </li>
+                            <Contact key={alt} href={href} src={src} alt={alt} />
                         )
                     })
                 }
-            </ul>
+            </ul>}
         </div>
     )
 }

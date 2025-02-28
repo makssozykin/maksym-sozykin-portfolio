@@ -1,24 +1,28 @@
 .nav {
   display: flex;
   flex-direction: column;
-  margin: 20px auto 0;
   position: relative;
 }
 
 .navList {
   display: flex;
   flex-direction: column;
-  list-style-type: none;
-  margin: 0;
-  padding: calc(20px - 10px);
-  border-radius: 50px;
-  transition: all 0.2s linear;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .navItem {
   display: flex;
   position: relative;
+  width: 50px;
+  height: 50px;
 }
+
+.navItem:active {
+  scale: 1.5;
+}
+
 .assistantBtn {
   display: flex;
   align-items: center;
@@ -36,19 +40,13 @@
 }
 
 .link:hover {
-  text-decoration: underline;
+  scale: 1.5;
 }
 
 .active {
-  font-size: clamp(0.875rem, 0.7985rem + 0.3265vw, 1.125rem);
-  border-radius: 24px;
-  text-decoration: none;
-  color: hsla(171, 15%, 35%, 1);
-  transition: all 0.2s ease-in-out;
-  display: flex;
-  align-items: center;
+  scale: 1.5;
 }
 
 .react-icons {
-  size: 2rem;
+  size: 1.3rem;
 }
